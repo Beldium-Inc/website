@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://beldium.com/</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://beldium.com/about</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/platform</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/miners</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/buyers</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/regulators</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/compliance</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/governance</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://beldium.com/data-architecture</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://beldium.com/partnerships</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/lithium-supply-chain</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/mining-data-intelligence</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/data-sovereignty</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/infrastructure-gaps</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/lithium-in-nigeria</loc>
+  <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://beldium.com/resources/business-development-brief</loc>
+  <lastmod>2026-07-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://beldium.com/contact</loc>
+  <lastmod>2026-04-08T09:14:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+
+</urlset>

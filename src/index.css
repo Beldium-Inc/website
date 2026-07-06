@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Beldium Brand Colors - Mineral Tech Aesthetic */
+    --background: 210 20% 98%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    /* Navy Blue Primary */
+    --primary: 220 60% 15%;
+    --primary-foreground: 210 20% 98%;
+
+    /* Light Gray Secondary */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 210 15% 93%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Mineral Teal Accent */
+    --accent: 185 50% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 220 60% 15%;
+
+    --radius: 0.625rem;
+
+    /* Custom Beldium Colors */
+    --navy: 220 60% 15%;
+    --navy-light: 220 45% 25%;
+    --navy-dark: 220 70% 8%;
+    --mineral-teal: 185 50% 40%;
+    --mineral-teal-light: 185 45% 55%;
+    --earth-gold: 38 70% 50%;
+    --earth-sand: 35 25% 90%;
+    --slate: 220 10% 45%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 15%) 0%, hsl(220 45% 25%) 50%, hsl(185 50% 40%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 96%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 60% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 60% 15% / 0.08), 0 2px 4px -2px hsl(220 60% 15% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(220 60% 15% / 0.1), 0 4px 6px -4px hsl(220 60% 15% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(220 60% 15% / 0.1), 0 8px 10px -6px hsl(220 60% 15% / 0.05);
+    --shadow-glow: 0 0 40px hsl(185 50% 40% / 0.15);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 220 60% 15%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 220 30% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 185 50% 40%;
+  }
+
+  .dark {
+    --background: 220 30% 6%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 185 50% 50%;
+    --primary-foreground: 220 30% 6%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 185 50% 45%;
+    --accent-foreground: 220 30% 6%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 185 50% 50%;
+    
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 185 50% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 185 50% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01", "ss03";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-xl border border-border/50 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .btn-hero {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-navy-light hover:shadow-lg active:scale-[0.98];
+  }
+
+  .btn-hero-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary bg-transparent px-6 py-3 text-sm font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground active:scale-[0.98];
+  }
+
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
