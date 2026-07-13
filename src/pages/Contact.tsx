@@ -47,7 +47,7 @@ const Contact = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("/.netlify/functions/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(Object.fromEntries(formData)),

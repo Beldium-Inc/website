@@ -26,7 +26,7 @@ const ComingSoon = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/.netlify/functions/waitlist", {
+      const response = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

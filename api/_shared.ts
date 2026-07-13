@@ -10,5 +10,3 @@ export function escapeHtml(value: string): string {
 export function isValidEmail(email: unknown): email is string {
   return typeof email === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-
-export const jsonHeaders = { "Content-Type": "application/json" };
