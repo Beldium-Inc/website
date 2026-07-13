@@ -120,14 +120,12 @@ export function Footer() {
           <p className="text-xl sm:text-2xl font-semibold text-primary-foreground mb-4">
             Ready to participate in Africa's structured lithium future?
           </p>
-          <a
-            href="https://app.beldium.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/coming-soon"
             className="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground px-6 py-3 text-sm font-medium shadow hover:bg-secondary/90 transition-colors"
           >
             Create Your Account
-          </a>
+          </Link>
         </div>
 
         {/* Bottom Bar */}

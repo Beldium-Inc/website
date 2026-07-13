@@ -42,17 +42,33 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message Sent",
-      description: "Thank you for your inquiry. Our team will respond within 24-48 hours.",
-    });
-    
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/.netlify/functions/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+
+      if (!response.ok) throw new Error("Request failed");
+
+      toast({
+        title: "Message Sent",
+        description: "Thank you for your inquiry. Our team will respond within 24-48 hours.",
+      });
+      form.reset();
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: "We couldn't send your message. Please try again or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

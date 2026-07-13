@@ -4,6 +4,8 @@ Allow: /governance
 Allow: /partnerships
 Allow: /data-architecture
 Allow: /resources/
+Allow: /features
+Allow: /marketplace
 Crawl-delay: 1
 
 User-agent: Bingbot

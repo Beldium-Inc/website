@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
   CheckCircle, 
@@ -78,10 +79,10 @@ const ForMiners = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" variant="secondary" asChild className="group">
-                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+                <Link to="/coming-soon">
                   Register as a Verified Miner
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
@@ -151,10 +152,10 @@ const ForMiners = () => {
               </p>
               <div className="space-y-4">
                 <Button size="lg" className="w-full group" asChild>
-                  <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+                  <Link to="/coming-soon">
                     Register as a Verified Miner
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

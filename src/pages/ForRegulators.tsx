@@ -68,10 +68,10 @@ const ForRegulators = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="group">
-                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+                <Link to="/coming-soon">
                   Join as a Compliance Partner
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
                 <Link to="/compliance">
@@ -174,10 +174,10 @@ const ForRegulators = () => {
                 </li>
               </ul>
               <Button asChild>
-                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+                <Link to="/coming-soon">
                   Access the Dashboard
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </Link>
               </Button>
             </div>
             <div className="aspect-video rounded-2xl bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 border border-border flex items-center justify-center">
@@ -200,10 +200,10 @@ const ForRegulators = () => {
             Participate in building transparent, compliant, and verified mineral trade infrastructure for the continent.
           </p>
           <Button size="lg" variant="secondary" asChild className="group">
-            <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+            <Link to="/coming-soon">
               Join as a Compliance Partner
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
+            </Link>
           </Button>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LogIn } from "lucide-react";
 
@@ -38,16 +39,16 @@ export function HeroSection() {
           
           <div className="animate-fade-up animation-delay-300 flex flex-col sm:flex-row gap-4">
             <Button size="lg" variant="secondary" asChild className="group">
-              <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+              <Link to="/coming-soon">
                 Join the Infrastructure
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </a>
+              </Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
-              <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+              <Link to="/coming-soon">
                 <LogIn className="mr-2 h-5 w-5" />
                 Access Your Dashboard
-              </a>
+              </Link>
             </Button>
           </div>
           

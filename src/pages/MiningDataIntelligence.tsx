@@ -54,7 +54,7 @@ const MiningDataIntelligence = () => {
               for miners, buyers, regulators, and investors.
             </p>
             <Button size="lg" asChild>
-              <a href="https://app.beldium.com/">Access the Platform <ArrowRight className="ml-2 h-5 w-5" /></a>
+              <Link to="/coming-soon">Access the Platform <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
           </div>
         </div>

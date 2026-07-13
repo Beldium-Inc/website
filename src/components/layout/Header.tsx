@@ -91,9 +91,9 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <Button size="sm" asChild>
-            <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
+            <Link to="/coming-soon">
               Sign In / Get Started
-            </a>
+            </Link>
           </Button>
         </div>
 
@@ -150,9 +150,9 @@ export function Header() {
             )}
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <Button asChild>
-                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                <Link to="/coming-soon" onClick={() => setMobileMenuOpen(false)}>
                   Sign In / Get Started
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
