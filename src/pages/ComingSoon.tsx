@@ -77,7 +77,7 @@ const ComingSoon = () => {
       </header>
 
       {/* Hero */}
-      <main className="flex-1 flex items-center">
+      <main className="flex-1 mt-[-30px] flex items-center">
         <section className="section-padding w-full">
           <div className="container-wide">
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-navy-light to-accent p-8 sm:p-12 lg:p-16">
