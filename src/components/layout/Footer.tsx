@@ -121,7 +121,7 @@ export function Footer() {
             Ready to participate in Africa's structured lithium future?
           </p>
           <Link
-            to="/coming-soon"
+            to="https://app.beldium.com"
             className="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground px-6 py-3 text-sm font-medium shadow hover:bg-secondary/90 transition-colors"
           >
             Create Your Account

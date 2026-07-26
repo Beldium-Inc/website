@@ -22,7 +22,7 @@ export function CTASection() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" variant="secondary" asChild className="group">
-                <Link to="/coming-soon">
+                <Link to="https://app.beldium.com">
                   Create Your Account
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>

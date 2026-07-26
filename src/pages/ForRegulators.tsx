@@ -68,7 +68,7 @@ const ForRegulators = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="group">
-                <Link to="/coming-soon">
+                <Link to="https://app.beldium.com">
                   Join as a Compliance Partner
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -174,7 +174,7 @@ const ForRegulators = () => {
                 </li>
               </ul>
               <Button asChild>
-                <Link to="/coming-soon">
+                <Link to="https://app.beldium.com">
                   Access the Dashboard
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -200,7 +200,7 @@ const ForRegulators = () => {
             Participate in building transparent, compliant, and verified mineral trade infrastructure for the continent.
           </p>
           <Button size="lg" variant="secondary" asChild className="group">
-            <Link to="/coming-soon">
+            <Link to="https://app.beldium.com">
               Join as a Compliance Partner
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>

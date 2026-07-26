@@ -39,13 +39,13 @@ export function HeroSection() {
           
           <div className="animate-fade-up animation-delay-300 flex flex-col sm:flex-row gap-4">
             <Button size="lg" variant="secondary" asChild className="group">
-              <Link to="/coming-soon">
+              <Link to="https://app.beldium.com">
                 Join the Infrastructure
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
-              <Link to="/coming-soon">
+              <Link to="https://app.beldium.com">
                 <LogIn className="mr-2 h-5 w-5" />
                 Access Your Dashboard
               </Link>

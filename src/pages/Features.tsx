@@ -97,7 +97,7 @@ const Features = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="group">
-                <Link to="/coming-soon">
+                <Link to="https://app.beldium.com">
                   Get Early Access
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>

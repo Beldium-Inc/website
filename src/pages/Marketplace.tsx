@@ -168,7 +168,7 @@ const Marketplace = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" variant="secondary" asChild>
-              <Link to="/coming-soon">Join the Waitlist</Link>
+              <Link to="https://app.beldium.com">Join the Waitlist</Link>
             </Button>
             <Button
               size="lg"

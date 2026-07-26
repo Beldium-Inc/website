@@ -79,7 +79,7 @@ const ForMiners = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" variant="secondary" asChild className="group">
-                <Link to="/coming-soon">
+                <Link to="https://app.beldium.com">
                   Register as a Verified Miner
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -152,7 +152,7 @@ const ForMiners = () => {
               </p>
               <div className="space-y-4">
                 <Button size="lg" className="w-full group" asChild>
-                  <Link to="/coming-soon">
+                  <Link to="https://app.beldium.com">
                     Register as a Verified Miner
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
