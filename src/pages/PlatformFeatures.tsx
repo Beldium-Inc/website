@@ -1,3 +1,4 @@
+import { SolutionLinksStrip } from "@/components/landing/SolutionLanding";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
@@ -183,6 +184,7 @@ const PlatformFeatures = () => {
           </div>
         </div>
       </section>
+    <SolutionLinksStrip />
     </Layout>
   );
 };

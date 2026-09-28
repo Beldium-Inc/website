@@ -20,9 +20,9 @@ export function ComplianceEntry({ onViewPartners }: ComplianceEntryProps) {
     <section className="section-padding bg-background">
       <div className="container-wide">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Compliance Infrastructure
-          </h2>
+          </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Legal, regulatory, environmental, and trade compliance across the lithium value chain.
           </p>

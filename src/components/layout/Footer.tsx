@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import beldiumLogo from "@/assets/beldium-logo.jpg";
+import { solutionPages } from "@/data/solutionPages";
 
 const footerLinks = {
   platform: [
@@ -26,7 +27,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container-wide section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
@@ -78,6 +79,23 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Solutions Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Solutions</h4>
+            <ul className="space-y-3">
+              {solutionPages.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    to={`/${p.slug}`}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                  >
+                    {p.navLabel}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Company Links */}
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
@@ -120,12 +138,14 @@ export function Footer() {
           <p className="text-xl sm:text-2xl font-semibold text-primary-foreground mb-4">
             Ready to participate in Africa's structured lithium future?
           </p>
-          <Link
-            to="https://app.beldium.com"
+          <a
+            href="https://app.beldium.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground px-6 py-3 text-sm font-medium shadow hover:bg-secondary/90 transition-colors"
           >
             Create Your Account
-          </Link>
+          </a>
         </div>
 
         {/* Bottom Bar */}

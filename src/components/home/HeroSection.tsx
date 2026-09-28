@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LogIn } from "lucide-react";
 
@@ -25,30 +24,30 @@ export function HeroSection() {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent-foreground backdrop-blur-sm text-sm font-medium mb-6">
               <span className="h-2 w-2 rounded-full bg-mineral-teal animate-pulse" />
-              Structured infrastructure for Africa's lithium future
+              Nigeria-based, built for Africa's mineral future
             </span>
           </div>
           
           <h1 className="animate-fade-up animation-delay-100 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-            Africa's Trusted Lithium Supply Chain Infrastructure
+            Critical Minerals Intelligence and Infrastructure, from Mine to Market
           </h1>
           
-          <p className="animate-fade-up animation-delay-200 text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl">Digitizing mining, compliance, trade, and logistics for Africa's mineral future, connecting verified miners with global buyers through transparent, structured infrastructure.
+          <p className="animate-fade-up animation-delay-200 text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl">Beldium is a Nigeria-based critical minerals intelligence, mining technology and digital infrastructure company. We connect the mineral value chain from mine to market, linking verified miners, buyers and regulators through transparent, structured infrastructure for Africa's mineral future.
 
           </p>
           
           <div className="animate-fade-up animation-delay-300 flex flex-col sm:flex-row gap-4">
             <Button size="lg" variant="secondary" asChild className="group">
-              <Link to="https://app.beldium.com">
+              <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
                 Join the Infrastructure
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
-              <Link to="https://app.beldium.com">
+              <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
                 <LogIn className="mr-2 h-5 w-5" />
                 Access Your Dashboard
-              </Link>
+              </a>
             </Button>
           </div>
           

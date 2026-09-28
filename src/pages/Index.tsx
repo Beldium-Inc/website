@@ -13,7 +13,8 @@ const Index = () => {
     <Layout>
       <SEO
         canonical="/"
-        keywords="lithium supply chain Africa, African mining infrastructure, mineral trade platform, Nigerian lithium, verified mineral supply"
+        description="Nigeria-based critical minerals intelligence and mining infrastructure company connecting verified miners, buyers and regulators from mine to market."
+        keywords="critical minerals Nigeria, mining intelligence Nigeria, lithium supply chain Africa, African mining infrastructure, mineral trade platform, Nigerian lithium, verified mineral supply"
       />
       <HeroSection />
       <HowItWorks />

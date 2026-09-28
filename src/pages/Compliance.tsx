@@ -1,3 +1,4 @@
+import { SolutionLinksStrip } from "@/components/landing/SolutionLanding";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { ComplianceDashboard } from "@/components/compliance/ComplianceDashboard";
@@ -12,6 +13,7 @@ const Compliance = () => {
         keywords="mining compliance Africa, lithium regulatory compliance, mineral trade compliance, Nigerian mining regulations"
       />
       <ComplianceDashboard />
+      <SolutionLinksStrip title="Related: Mining Compliance, Traceability and Logistics" />
     </Layout>
   );
 };

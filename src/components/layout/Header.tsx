@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import beldiumLogo from "@/assets/beldium-logo.jpg";
+import { solutionPages, featuredSolutionSlugs } from "@/data/solutionPages";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,6 +21,13 @@ const navigation = [
       { name: "For Buyers", href: "/buyers" },
       { name: "For Regulators", href: "/regulators" },
     ],
+  },
+  {
+    name: "Explore",
+    children: featuredSolutionSlugs.map((slug) => {
+      const p = solutionPages.find((x) => x.slug === slug)!;
+      return { name: p.navLabel, href: `/${p.slug}` };
+    }),
   },
   { name: "Compliance", href: "/compliance" },
   { name: "About", href: "/about" },
@@ -55,7 +63,7 @@ export function Header() {
                     <ChevronDown className="h-4 w-4" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="center" className="w-48">
+                <DropdownMenuContent align="center" className="w-60">
                   {item.children.map((child) => (
                     <DropdownMenuItem key={child.name} asChild>
                       <Link
@@ -91,9 +99,9 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <Button size="sm" asChild>
-            <Link to="https://app.beldium.com">
+            <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
               Sign In / Get Started
-            </Link>
+            </a>
           </Button>
         </div>
 
@@ -150,9 +158,9 @@ export function Header() {
             )}
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <Button asChild>
-                <Link to="https://app.beldium.com" onClick={() => setMobileMenuOpen(false)}>
+                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                   Sign In / Get Started
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

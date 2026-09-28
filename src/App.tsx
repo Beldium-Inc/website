@@ -13,9 +13,6 @@ import Compliance from "./pages/Compliance";
 import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
-import ComingSoon from "./pages/ComingSoon";
-import Features from "./pages/Features";
-import Marketplace from "./pages/Marketplace";
 import NotFound from "./pages/NotFound";
 import LithiumSupplyChain from "./pages/LithiumSupplyChain";
 import MiningDataIntelligence from "./pages/MiningDataIntelligence";
@@ -26,6 +23,8 @@ import DataSovereignty from "./pages/DataSovereignty";
 import InfrastructureGaps from "./pages/InfrastructureGaps";
 import LithiumInNigeria from "./pages/LithiumInNigeria";
 import BusinessDevelopmentBrief from "./pages/BusinessDevelopmentBrief";
+import SolutionPage from "./pages/SolutionPage";
+import { solutionPages } from "./data/solutionPages";
 
 const queryClient = new QueryClient();
 
@@ -52,12 +51,12 @@ const App = () => (
             <Route path="/resources/lithium-in-nigeria" element={<LithiumInNigeria />} />
             <Route path="/resources/business-development-brief" element={<BusinessDevelopmentBrief />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/coming-soon" element={<ComingSoon />} />
-            <Route path="/features" element={<Features />} />
-            <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/governance" element={<Governance />} />
             <Route path="/data-architecture" element={<DataArchitecture />} />
             <Route path="/partnerships" element={<Partnerships />} />
+            {solutionPages.map((p) => (
+              <Route key={p.slug} path={`/${p.slug}`} element={<SolutionPage slug={p.slug} />} />
+            ))}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

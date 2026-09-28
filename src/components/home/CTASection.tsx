@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -22,10 +21,10 @@ export function CTASection() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" variant="secondary" asChild className="group">
-                <Link to="https://app.beldium.com">
+                <a href="https://app.beldium.com/" target="_blank" rel="noopener noreferrer">
                   Create Your Account
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
